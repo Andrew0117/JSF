@@ -1,0 +1,11 @@
+**/build/
+**/dist/
+**/target/
+**/.idea/
+**/.settings/
+**/out/
+**/.gradle/
+**/.project
+**/*.iml
+**/.classpath
+**/nb-configuration.xml
