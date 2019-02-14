@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:head>
+        <title>#{msg.labelTitle}</title>
+        <h:outputStylesheet name="css/main.css" />
+        <h:outputScript name="js/jquery-1.10.2.js" />
+        <h:outputScript name="js/main.js" />
+    </h:head>
+    <h:body>
+        <f:view locale="#{loginBean.locale}">
+            <div id="first">
+                <div class="main">
+                    <table>
+                        <tr style="font-family: verdana, arial, sans-serif; color: black; font-size: 12px; font-style: italic; font-weight: bold;">
+                            <td><h:outputText value="#{msg.labelUser}"/></td>
+                            <td><h:outputText value="#{msg.labelPass}"/></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><h:inputText id="u" value="#{loginBean.name}"/></td>
+                            <td><h:inputSecret id="p" value="#{loginBean.pass}"/></td>
+                            <td><input id="l" type="button" name="submit" style="float: right;" value="Login"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><p id="er" style="color: red;"></p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </f:view>
+        <ui:include src="/WEB-INF/tamplate/footer.xhtml"/>
+    </h:body>
+</html>

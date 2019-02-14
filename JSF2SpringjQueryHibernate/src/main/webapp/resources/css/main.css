@@ -1,0 +1,21 @@
+/* 
+    Created on : 12.05.2017, 0:17:41
+    Author     : Andrey
+*/
+#first{
+    height: 110px; 
+    min-width: 450px;
+}
+
+#first .main{
+    margin: 0 auto; 
+    padding-top: 13px; 
+    width: 400px;
+}
+
+.footer{
+    height: 10vh;
+    width: 100%;
+    transform: translate(0, 75vh);
+    background: white;
+}

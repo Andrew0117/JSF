@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>#{msg.labelTitle}</title>
+        <h:outputStylesheet name="css/main.css" />
+        <h:outputScript name="js/jquery-1.10.2.js" />
+        <h:outputScript name="js/welcome.js" />
+    </h:head>
+    <h:body>
+        <f:view locale="#{loginBean.locale}">
+            <div id="first">
+                <div class="main">
+                    <span id="text" style="font-family: verdana, arial, sans-serif; color: green;
+                                 font-size: 14px; font-style: italic; font-weight: bold;">
+                        #{loginBean.main.login.login}
+                    </span>
+                </div>
+            </div>
+        </f:view>
+        <ui:include src="/WEB-INF/tamplate/footer.xhtml"/>
+    </h:body>
+</html>
